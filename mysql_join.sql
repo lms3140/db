@@ -214,10 +214,17 @@ select e.emp_id, e2.email
 from employee e , employee e2
 where e.emp_id = e2.emp_id;
 
+show databases;
+use hrdb2019;
+select database();
 
+select *
+from employee e, department d
+where e.dept_id = d.dept_id;
 
-
-
+select *
+from employee e left outer join department d
+on e.dept_id = d.dept_id;
 
 
 
